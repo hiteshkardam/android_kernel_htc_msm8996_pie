@@ -180,5 +180,8 @@ obj-$(CONFIG_SENSORS_SSC)	+= sensors/
 # <t-base drivers
 obj-$(CONFIG_TRUSTONIC_TEE)	+= gud/
 
+#HTC Debug
+obj-$(CONFIG_HTC_DEBUG_FOOTPRINT)	+= htc_mnemosyne/
+
 #HTC LogLevel
 obj-$(CONFIG_HTC_LOGLEVEL)      += htc_loglevel/
