@@ -179,3 +179,6 @@ obj-$(CONFIG_SENSORS_SSC)	+= sensors/
 
 # <t-base drivers
 obj-$(CONFIG_TRUSTONIC_TEE)	+= gud/
+
+#HTC LogLevel
+obj-$(CONFIG_HTC_LOGLEVEL)      += htc_loglevel/
