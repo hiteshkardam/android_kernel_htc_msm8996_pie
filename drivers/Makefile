@@ -185,3 +185,7 @@ obj-$(CONFIG_HTC_DEBUG_FOOTPRINT)	+= htc_mnemosyne/
 
 #HTC LogLevel
 obj-$(CONFIG_HTC_LOGLEVEL)      += htc_loglevel/
+
+#HTC Security
+obj-$(CONFIG_HTC_MSM_SERIAL)    += htc_msm_serial/
+
