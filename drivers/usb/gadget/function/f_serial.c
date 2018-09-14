@@ -44,7 +44,6 @@
 #define GSERIAL_SET_XPORT_TYPE_SMD 1
 
 #define GSERIAL_BUF_LEN  256
-#define GSERIAL_NO_PORTS 6
 #define GSERIAL_NO_PORTS 8 /*++ 2015/06/23 USB Team, PCN00004 ++*/
 
 struct ioctl_smd_write_arg_type {

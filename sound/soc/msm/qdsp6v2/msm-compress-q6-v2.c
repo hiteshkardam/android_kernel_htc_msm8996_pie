@@ -2576,7 +2576,9 @@ static int msm_compr_trigger(struct snd_compr_stream *cstream, int cmd)
 				__func__, stream_id, bits_per_sample);
 		rc = q6asm_stream_open_write_v3(prtd->audio_client,
 				prtd->codec, prtd->bits_per_sample, //HTC_AUD
-
+				stream_id,
+				prtd->gapless_state.use_dsp_gapless_mode);
+				
 		switch (q6core_get_avs_version()) {
 		case (Q6_SUBSYS_AVS2_7):
 			rc = q6asm_stream_open_write_v3(ac,
