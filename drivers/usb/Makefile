@@ -62,6 +62,3 @@ obj-$(CONFIG_USB_GADGET)	+= gadget/
 obj-$(CONFIG_USB_COMMON)	+= common/
 
 obj-$(CONFIG_USBIP_CORE)	+= usbip/
-# HTC SSD USB +
-obj-$(CONFIG_ANALOGIX_OHIO)	+= anx7418/
-# HTC SSD USB -
