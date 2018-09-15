@@ -552,6 +552,12 @@ config LEDS_QPNP_FLASH
 	  To compile this driver as a module, choose M here: the module will
 	  be called leds-qpnp-flash.
 
+config GPIO_STROBE_NOT_SUPPORT
+	tristate "GPIO strobe support"
+	depends on LEDS_QPNP_FLASH
+	help
+		Check GPIO strobe support dynamic for set_backlight.
+
 config LEDS_QPNP_WLED
 	tristate "Support for QPNP WLED"
 	depends on LEDS_CLASS && MSM_SPMI && OF_SPMI
