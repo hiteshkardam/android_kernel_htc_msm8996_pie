@@ -1,4 +1,4 @@
-dtb-$(CONFIG_ARCH_MSM8996) += msm8996-v2-pmi8994-cdp.dtb \
+dtb-$(CONFIG_ARCH_MSM8996_DISABLED) += msm8996-v2-pmi8994-cdp.dtb \
 	msm8996-v2-pmi8994-mtp.dtb \
 	msm8996-v2-pmi8994-pmk8001-cdp.dtb \
 	msm8996-v2-pmi8994-pmk8001-mtp.dtb \
@@ -180,6 +180,21 @@ dtb-$(CONFIG_ARCH_MSM8998) += msm8998-sim.dtb \
 	msm8998-v2.1-interposer-sdm660-mtp.dtb \
 	msm8998-v2.1-interposer-sdm660-qrd.dtb
 endif
+
+# HTC msm8996 device dtbs
+dtb-$(CONFIG_ARCH_MSM8996) += \
+	msm8996-v3-htc_pme-pvt.dtb \
+	msm8996-v3-htc_pme-xc.dtb \
+	msm8996-v3-htc_pme-xb.dtb \
+	msm8996-v3-htc_pme-xa.dtb \
+	msm8996-v2-htc_pme-xb.dtb \
+	msm8996-v2-htc_pme-xa.dtb \
+	msm8996-v2-htc_evm.dtb \
+	msm8996-v3-htc_pmeuhljapan-xa.dtb \
+	msm8996-v3-htc_pmeuhljapan-xb.dtb \
+	msm8996-v3-htc_pmewhl-xd.dtb \
+	msm8996-v3-htc_pmewhl-pvt.dtb \
+	msm8996-v3-htc_pmeuhljapan-pvt.dtb \
 
 dtb-$(CONFIG_ARCH_MSMHAMSTER) += msmhamster-rumi.dtb
 
