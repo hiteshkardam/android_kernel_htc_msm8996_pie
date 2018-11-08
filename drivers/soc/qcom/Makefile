@@ -34,6 +34,7 @@ obj-$(CONFIG_MSM_SYSTEM_HEALTH_MONITOR)	+=	system_health_monitor.o
 obj-$(CONFIG_MSM_GLINK_PKT)	+=	msm_glink_pkt.o
 
 obj-$(CONFIG_MEM_SHARE_QMI_SERVICE)		+= memshare/
+obj-y += rpm_stats_ver.o
 obj-$(CONFIG_MSM_PIL_SSR_GENERIC) += subsys-pil-tz.o
 obj-$(CONFIG_MSM_PIL_MSS_QDSP6V5) += pil-q6v5.o pil-msa.o pil-q6v5-mss.o
 obj-$(CONFIG_MSM_PIL)   +=      peripheral-loader.o
@@ -42,6 +43,7 @@ obj-$(CONFIG_ARCH_MSM8996) += msm_cpu_voltage.o
 
 obj-$(CONFIG_MSM_PERFORMANCE) += msm_performance.o
 obj-$(CONFIG_MSM_PASR) += pasr.o
+obj-$(CONFIG_FPR_FPC)  += htc_smi.o
 
 ifdef CONFIG_MSM_SUBSYSTEM_RESTART
 	obj-y += subsystem_notif.o
