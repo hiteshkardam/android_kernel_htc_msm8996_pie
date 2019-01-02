@@ -675,6 +675,13 @@ config SCHED_SMT
 	  MultiThreading at a cost of slightly increased overhead in some
 	  places. If unsure say N here.
 
+config HTC_POWER_DEBUG
+        bool "Support htc power debug feature"
+        help
+         Use this to enable htc power debug feature including pm statistics,
+         clock/gpio/qpnp pin dump, wakeup source, kerenl top and autosuspend
+         stage footprint
+
 config NR_CPUS
 	int "Maximum number of CPUs (2-4096)"
 	range 2 4096
@@ -1239,6 +1246,8 @@ source "drivers/acpi/Kconfig"
 source "fs/Kconfig"
 
 source "arch/arm64/kvm/Kconfig"
+
+source "arch/arm64/Kconfig.htc"
 
 source "arch/arm64/Kconfig.debug"
 
