@@ -392,7 +392,7 @@
 				"pll_byte_clk_mux", "pll_pixel_clk_mux",
 				"pll_byte_clk_src", "pll_pixel_clk_src";
 
-			qcom,null-insertion-enabled;
+
 			qcom,platform-strength-ctrl = [ff 06
 							ff 06
 							ff 06
@@ -437,7 +437,7 @@
 				"pll_byte_clk_mux", "pll_pixel_clk_mux",
 				"pll_byte_clk_src", "pll_pixel_clk_src";
 
-			qcom,null-insertion-enabled;
+
 			qcom,platform-strength-ctrl = [ff 06
 							ff 06
 							ff 06
@@ -494,7 +494,7 @@
 		clock-names = "hpd_mdp_core_clk", "hpd_iface_clk",
 			"hpd_core_clk", "hpd_alt_iface_clk", "core_extp_clk";
 
-		qcom,hdmi-tx-hpd = <&pm8994_mpps 4 0>;
+		qcom,hdmi-tx-hpd = <&tlmm 34 0>;
 		qcom,mdss-fb-map = <&mdss_fb2>;
 		qcom,pluggable;
 
